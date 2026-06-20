@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikas Construction and Engineers - Building Foundations for a Stronger Future</title>
+    <!-- Modern Tailwind CSS Engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#0056b3',
+                            dark: '#003f80',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Open Sans"', 'sans-serif'],
+                        heading: ['Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800 antialiased">
+
+    <!-- Header / Navbar Section -->
+    <header class="bg-white shadow-sm sticky top-0 z-50 border-b border-gray-100">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800 font-heading">Vikas <span class="text-primary">Construction</span></a>
+            
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="text-gray-600 hover:text-primary transition-colors py-2 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-primary transition-colors py-2 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full">About Us</a>
+                <a href="#services" class="text-gray-600 hover:text-primary transition-colors py-2 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full">Services</a>
+                <a href="#projects" class="text-gray-600 hover:text-primary transition-colors py-2 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full">Projects</a>
+                <a href="#contact" class="text-gray-600 hover:text-primary transition-colors py-2 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full">Contact</a>
+            </div>
+            
+            <a href="#contact" class="hidden md:block bg-primary text-white font-semibold px-6 py-2.5 rounded-lg hover:bg-primary-dark transition-all shadow-sm">Get a Quote</a>
+            
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none p-2 rounded-lg hover:bg-gray-100">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 py-4 space-y-3 border-t border-gray-100 shadow-inner">
+            <a href="#home" class="block font-medium text-gray-600 hover:text-primary">Home</a>
+            <a href="#about" class="block font-medium text-gray-600 hover:text-primary">About Us</a>
+            <a href="#services" class="block font-medium text-gray-600 hover:text-primary">Services</a>
+            <a href="#projects" class="block font-medium text-gray-600 hover:text-primary">Projects</a>
+            <a href="#contact" class="block font-medium text-gray-600 hover:text-primary">Contact</a>
+            <a href="#contact" class="block bg-primary text-white font-semibold text-center py-2.5 rounded-lg hover:bg-primary-dark transition-all">Get a Quote</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative bg-cover bg-center h-screen flex items-center justify-center text-white" style="background-image: url('https://via.placeholder.com/1920x1080/0056b3/ffffff?text=Vikas+Construction+Hero+Image');">
+            <div class="absolute inset-0 bg-black/60"></div>
+            <div class="relative z-10 text-center px-6 max-w-4xl">
+                <h1 class="text-4xl md:text-6xl font-bold font-heading leading-tight mb-6">Building Foundations for a Stronger Future</h1>
+                <p class="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-10 font-light">Vikas Construction and Engineers: Your trusted partner in quality construction since 2024.</p>
+                <a href="#projects" class="bg-primary text-white font-semibold text-lg px-8 py-3.5 rounded-lg hover:bg-primary-dark transition-all inline-block shadow-lg shadow-primary/20">View Our Projects</a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold font-heading text-gray-900 mb-4">About Vikas Construction and Engineers</h2>
+                    <div class="w-16 h-1 bg-primary mx-auto rounded-full"></div>
+                </div>
+                
+                <div class="max-w-4xl mx-auto text-center space-y-6 text-lg text-gray-600 leading-relaxed">
+                    <p>
+                        Established in 2024, Vikas Construction and Engineers is a dynamic and forward-thinking construction company dedicated to delivering excellence in every project. With a strong foundation in engineering principles, we are committed to building high-quality, sustainable, and innovative solutions for our clients. Our expertise spans various construction sectors, ensuring precision and reliability from concept to completion.
+                    </p>
+                    <p class="bg-gray-50 border-l-4 border-primary p-4 rounded-r-lg inline-block text-left max-w-3xl text-gray-700">
+                        Our office is located at: <strong>Shop No. 75, Geeta Colony, Kansapur Road, Yamunanagar 135003</strong>. We pride ourselves on our transparent approach, client-centric focus, and a relentless pursuit of perfection in every structure we build.
+                    </p>
+                </div>
+                
+                <div class="mt-16 grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="p-8 bg-gray-50 border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+                        <h3 class="text-xl font-bold font-heading text-primary mb-3">Our Mission</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">To deliver superior construction solutions that exceed client expectations, foster sustainable development, and contribute positively to our communities.</p>
+                    </div>
+                    <div class="p-8 bg-gray-50 border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+                        <h3 class="text-xl font-bold font-heading text-primary mb-3">Our Values</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">Integrity, Quality, Innovation, Safety, and Client Satisfaction are the pillars of our work ethic.</p>
+                    </div>
+                    <div class="p-8 bg-gray-50 border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+                        <h3 class="text-xl font-bold font-heading text-primary mb-3">Our Expertise</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">Backed by experienced engineers, we bring technical prowess and practical knowledge to every challenge.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 md:py-28 bg-gray-100/60">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold font-heading text-gray-900 mb-4">Our Services</h2>
+                    <div class="w-16 h-1 bg-primary mx-auto rounded-full"></div>
+                    <p class="text-lg text-gray-600 mt-6 leading-relaxed">
+                        Vikas Construction and Engineers offers a comprehensive range of construction and engineering services, tailored to meet the diverse needs of our clients.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <!-- Service 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-gray-200/50 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <h3 class="text-xl font-bold font-heading text-primary mb-4">Commercial Construction</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">From office buildings to retail spaces, we build robust and functional commercial properties designed for success.</p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-gray-200/50 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <h3 class="text-xl font-bold font-heading text-primary mb-4">Residential Development</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Crafting homes and residential complexes with a focus on quality, comfort, and modern living standards.</p>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-gray-200/50 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <h3 class="text-xl font-bold font-heading text-primary mb-4">Infrastructure Projects</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Specializing in critical infrastructure, including roads, bridges, and drainage systems, to support community growth.</p>
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="bg-white p-8 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-gray-200/50 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <h3 class="text-xl font-bold font-heading text-primary mb-4">Specialized Engineering</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Providing expert engineering solutions for complex challenges, ensuring structural integrity and innovative design.</p>
+                    </div>
+                    <!-- Service 5 -->
+                    <div class="bg-white p-8 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-gray-200/50 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <h3 class="text-xl font-bold font-heading text-primary mb-4">Renovation & Remodeling</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Transforming existing structures with modern designs and enhanced functionality, breathing new life into spaces.</p>
+                    </div>
+                    <!-- Service 6 -->
+                    <div class="bg-white p-8 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-gray-200/50 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <h3 class="text-xl font-bold font-heading text-primary mb-4">Project Management</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Overseeing projects from inception to completion, ensuring timely delivery, budget adherence, and quality control.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold font-heading text-gray-900 mb-4">Our Projects</h2>
+                    <div class="w-16 h-1 bg-primary mx-auto rounded-full"></div>
+                    <p class="text-lg text-gray-600 mt-6 leading-relaxed">
+                        Showcasing our commitment to quality and precision, here's an overview of some of our key projects.
+                    </p>
+                </div>
+
+                <!-- Featured Project Alert Block -->
+                <div class="bg-blue-50 border-l-4 border-primary p-8 mb-16 text-left shadow-sm rounded-r-xl max-w-4xl mx-auto">
+                    <h3 class="text-2xl font-bold font-heading text-primary mb-3">Featured Project: RCC Drain for Municipal Corporation</h3>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        We are currently undertaking a significant infrastructure project: the construction of an **RCC Drain for the Municipal Corporation**. This vital project is valued at **₹2,20,00,000 (Two Crore Twenty Lakhs INR)**, demonstrating our capability to handle large-scale public works that contribute to urban development.
+                    </p>
+                    <p class="text-gray-500 mt-4 text-xs italic">
+                        *This project highlights our expertise in robust civil engineering and our commitment to public infrastructure.*
+                    </p>
+                </div>
+
+                <!-- Road Projects Data Table Layout -->
+                <div class="max-w-5xl mx-auto">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 font-heading text-center md:text-left">Road Widening and Strengthening Projects</h3>
+                    
+                    <div class="bg-white rounded-xl shadow-[0_4px_25px_rgba(0,0,0,0.04)] border border-gray-150 overflow-hidden">
+                        <div class="overflow-x-auto">
+                            <table class="min-w-full divide-y divide-gray-150 text-left">
+                                <thead class="bg-gray-100 text-gray-700 uppercase text-xs font-semibold tracking-wider">
+                                    <tr>
+                                        <th class="py-4 px-6">Sr. No.</th>
+                                        <th class="py-4 px-6">Name of the Road</th>
+                                        <th class="py-4 px-6 text-right">Amount (INR)</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-150 text-sm text-gray-600 font-medium">
+                                    <tr class="hover:bg-gray-50/80 transition-colors">
+                                        <td class="py-4 px-6">1</td>
+                                        <td class="py-4 px-6">Widening and strengthening on Badi Majra road to H.B. Tirath Nagar (ID 539) Km. 0.00 to 0.62</td>
+                                        <td class="py-4 px-6 text-right text-gray-900 font-bold font-heading">₹22.51 Lakhs</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50/80 transition-colors">
+                                        <td class="py-4 px-6">2</td>
+                                        <td class="py-4 px-6">Widening and strengthening on Pansara Shahzadpur road to H. B. Sabepur (ID 548) Km. 0.00 to 2.02</td>
+                                        <td class="py-4 px-6 text-right text-gray-900 font-bold font-heading">₹21.79 Lakhs</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50/80 transition-colors">
+                                        <td class="py-4 px-6">3</td>
+                                        <td class="py-4 px-6">Widening and strengthening on Badi Majra to Gadholi Majri (ID 543) Km. 0.00 to 1.00</td>
+                                        <td class="py-4 px-6 text-right text-gray-900 font-bold font-heading">₹36.84 Lakhs</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50/80 transition-colors">
+                                        <td class="py-4 px-6">4</td>
+                                        <td class="py-4 px-6">Widening and strengthening on Jagadhari Chhachhrauli road to Balachour (ID 674) Km. 0.00 to 1.03</td>
+                                        <td class="py-4 px-6 text-right text-gray-900 font-bold font-heading">₹32.61 Lakhs</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50/80 transition-colors">
+                                        <td class="py-4 px-6">5</td>
+                                        <td class="py-4 px-6">Widening and strengthening on Pansara Shahzadpur road to Mehar Majra (ID 557) Km. 0.00 to 2.02</td>
+                                        <td class="py-4 px-6 text-right text-gray-900 font-bold font-heading">₹27.71 Lakhs</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50/80 transition-colors">
+                                        <td class="py-4 px-6">6</td>
+                                        <td class="py-4 px-6">Widening and strengthening on Kaith Kalanaur to Isserpur (ID 529) Km. 0.00 to 0.76</td>
+                                        <td class="py-4 px-6 text-right text-gray-900 font-bold font-heading">₹49.48 Lakhs</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50/80 transition-colors">
+                                        <td class="py-4 px-6">7</td>
+                                        <td class="py-4 px-6">Widening and strengthening on Pansara Shahzadpur to Rampur (ID 549) Km. 0.00 to 0.80</td>
+                                        <td class="py-4 px-6 text-right text-gray-900 font-bold font-heading">₹41.51 Lakhs</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50/80 transition-colors">
+                                        <td class="py-4 px-6">8</td>
+                                        <td class="py-4 px-6">Widening and strengthening on Kaith Kalanaur road to Panwalan (ID 516) 0.00 to 0.47</td>
+                                        <td class="py-4 px-6 text-right text-gray-900 font-bold font-heading">₹25.87 Lakhs</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50/80 transition-colors">
+                                        <td class="py-4 px-6">9</td>
+                                        <td class="py-4 px-6">Widening and strengthening on Buria Khadri Deodhar road to Fatehgarh (ID 683) Km. 0.00 to 2.02</td>
+                                        <td class="py-4 px-6 text-right text-gray-900 font-bold font-heading">₹35.21 Lakhs</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50/80 transition-colors">
+                                        <td class="py-4 px-6">10</td>
+                                        <td class="py-4 px-6">Widening and strengthening on Khizrabad Bilaspur road to Bhangeri (ID 700) Km. 0.00 to 2.57</td>
+                                        <td class="py-4 px-6 text-right text-gray-900 font-bold font-heading">₹122.63 Lakhs</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50/80 transition-colors">
+                                        <td class="py-4 px-6">11</td>
+                                        <td class="py-4 px-6">Widening and strengthening on Chhachhrauli Poanta to Chuhurpur (ID 725) Km. 0.00 to 0.35</td>
+                                        <td class="py-4 px-6 text-right text-gray-900 font-bold font-heading">₹42.54 Lakhs</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50/80 transition-colors">
+                                        <td class="py-4 px-6">12</td>
+                                        <td class="py-4 px-6">Widening and strengthening on Chhachhrauli Poanta to Naggal Patti (ID 698) Km. 0.00 to 1.53</td>
+                                        <td class="py-4 px-6 text-right text-gray-900 font-bold font-heading">₹59.54 Lakhs</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50/80 transition-colors">
+                                        <td class="py-4 px-6">13</td>
+                                        <td class="py-4 px-6">Widening and strengthening on Jagadhari Chhachhrauli road to Mandkheri via: Meerpur (ID 667) Km. 0.00 to 2.75</td>
+                                        <td class="py-4 px-6 text-right text-gray-900 font-bold font-heading">₹98.78 Lakhs</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50/80 transition-colors">
+                                        <td class="py-4 px-6">14</td>
+                                        <td class="py-4 px-6">Widening and strengthening on Chhachhrauli Kot Darpur Road to Dadupur Malian (ID 702) Km. 0.00 to 1.08</td>
+                                        <td class="py-4 px-6 text-right text-gray-900 font-bold font-heading">₹36.33 Lakhs</td>
+                                    </tr>
+                                    <!-- Summary Row -->
+                                    <tr class="bg-gray-100 font-bold text-gray-900">
+                                        <td class="py-4 px-6" colspan="2">Total Expenditure (Road Projects)</td>
+                                        <td class="py-4 px-6 text-right text-primary font-extrabold font-heading text-base">₹653.35 Lakhs</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="text-lg text-gray-600 max-w-4xl mx-auto mt-16 text-center leading-relaxed">
+                    We are continuously expanding our portfolio with new and challenging projects. For more detailed information on any of these projects or to discuss your specific construction needs, please feel free to contact us.
+                </p>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-20 md:py-28 bg-gray-100/60">
+            <div class="container mx-auto px-6 text-center">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold font-heading text-gray-900 mb-4">What Our Clients Say</h2>
+                    <div class="w-16 h-1 bg-primary mx-auto rounded-full"></div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 text-left flex flex-col justify-between">
+                        <p class="text-lg italic text-gray-600 mb-6">"Vikas Construction delivered our project on time and within budget. Their engineering expertise is truly commendable!"</p>
+                        <p class="font-bold text-primary text-sm font-heading">- Satisfied Client A</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 text-left flex flex-col justify-between">
+                        <p class="text-lg italic text-gray-600 mb-6">"The team at Vikas Construction and Engineers showed exceptional professionalism and attention to detail. Highly recommended!"</p>
+                        <p class="font-bold text-primary text-sm font-heading">- Satisfied Client B</p>
+                    </div>
+                </div>
+                
+                <p class="text-gray-500 mt-10 text-sm">
+                    We are proud of the relationships we build and the trust we earn. More testimonials coming soon!
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold font-heading text-gray-900 mb-4">Get in Touch</h2>
+                    <div class="w-16 h-1 bg-primary mx-auto rounded-full"></div>
+                    <p class="text-lg text-gray-600 mt-6 leading-relaxed">
+                        Have a project in mind or need expert advice? Contact Vikas Construction and Engineers today.
+                    </p>
+                </div>
+                
+                <div class="max-w-5xl mx-auto grid lg:grid-cols-12 gap-12 items-start">
+                    <!-- Form Container -->
+                    <div class="lg:col-span-7 bg-gray-50 p-8 rounded-2xl border border-gray-200/60 shadow-sm">
+                        <form action="#" method="POST" class="space-y-5 text-sm">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-bold mb-2">Name:</label>
+                                <input type="text" id="name" name="name" class="w-full bg-white border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 rounded-lg py-2.5 px-3.5 text-gray-800 outline-none transition-all" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-bold mb-2">Email:</label>
+                                <input type="email" id="email" name="email" class="w-full bg-white border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 rounded-lg py-2.5 px-3.5 text-gray-800 outline-none transition-all" required>
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 font-bold mb-2">Phone (Optional):</label>
+                                <input type="tel" id="phone" name="phone" class="w-full bg-white border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 rounded-lg py-2.5 px-3.5 text-gray-800 outline-none transition-all">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 font-bold mb-2">Your Message:</label>
+                                <textarea id="message" name="message" rows="5" class="w-full bg-white border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 rounded-lg py-2.5 px-3.5 text-gray-800 outline-none transition-all resize-none" required></textarea>
+                            </div>
+                            <div class="text-center pt-2">
+                                <button type="submit" class="bg-primary text-white font-semibold px-8 py-3.5 rounded-lg hover:bg-primary-dark shadow-md transition-all font-heading tracking-wide">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- Info Box Container -->
+                    <div class="lg:col-span-5 bg-white border border-gray-200/80 p-8 rounded-2xl shadow-sm text-left space-y-6">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-3 font-heading">Our Office Address:</h3>
+                            <p class="text-gray-600 leading-relaxed">Shop No. 75, Geeta Colony, Kansapur Road,</p>
+                            <p class="text-gray-600">Yamunanagar 135003</p>
+                        </div>
+                        <div class="pt-4 border-t border-gray-100 space-y-2">
+                            <p class="text-gray-600">Email: <a href="mailto:info@vikasconstruction.com" class="text-primary hover:underline font-semibold">info@vikasconstruction.com</a></p>
+                            <p class="text-gray-600">Phone: <a href="tel:+911234567890" class="text-primary hover:underline font-semibold">+91 12345 67890</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-gray-300 py-12 border-t border-gray-700 text-sm">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-8">
+                <a href="#" class="text-2xl font-bold text-white font-heading">Vikas <span class="text-blue-500">Construction</span></a>
+                <p class="text-xs text-gray-400 mt-2 font-mono">Engineers Since 2024</p>
+            </div>
+            
+            <div class="flex justify-center space-x-6 font-medium mb-8">
+                <a href="#about" class="text-gray-400 hover:text-white transition-colors">About Us</a>
+                <a href="#services" class="text-gray-400 hover:text-white transition-colors">Services</a>
+                <a href="#projects" class="text-gray-400 hover:text-white transition-colors">Projects</a>
+                <a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+            </div>
+            
+            <div class="text-xs text-gray-500 border-t border-gray-700/60 pt-6 space-y-3">
+                <p>&copy; 2024 Vikas Construction and Engineers. All rights reserved.</p>
+                <div class="space-x-4">
+                    <a href="#" class="text-gray-500 hover:text-gray-300 transition-colors">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#" class="text-gray-500 hover:text-gray-300 transition-colors">Terms of Use</a>
+                    <span>|</span>
+                    <a href="#" class="text-gray-500 hover:text-gray-300 transition-colors">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    e.preventDefault();
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
