@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vikas Constructions & Engineer's — Building Foundations for a Stronger Future</title>
+<title>Vikas Constructions & Engineers — Building Foundations for a Stronger Future</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -441,6 +441,65 @@
   }
 
   /* ===== Projects ===== */
+  /* Major / associate projects */
+  .major-grid{
+    display:flex;
+    flex-direction:column;
+    gap:1px;
+    background:var(--line-soft);
+    border:1px solid var(--line-soft);
+    margin-bottom:44px;
+  }
+  .major-card{
+    background:var(--panel);
+    padding:26px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:24px;
+    flex-wrap:wrap;
+    transition:background .15s ease;
+  }
+  .major-card:hover{background:var(--white);}
+  .major-card .assoc-tag{
+    display:inline-block;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10.5px;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    color:var(--amber-dark);
+    border:1px solid var(--amber-dark);
+    padding:3px 8px;
+    margin-bottom:10px;
+  }
+  .major-card h4{
+    font-family:'Archivo',sans-serif;
+    font-size:18px;
+    font-weight:700;
+    margin:0 0 6px;
+    color:var(--ink);
+  }
+  .major-card .meta{
+    font-size:13.5px;
+    color:var(--ink-soft);
+    margin:0;
+    max-width:56ch;
+  }
+  .major-card .value{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:21px;
+    font-weight:600;
+    color:var(--steel);
+    white-space:nowrap;
+    flex-shrink:0;
+  }
+  .major-note{
+    font-size:13px;
+    color:var(--ink-soft);
+    margin:-24px 0 44px;
+    font-style:italic;
+  }
+
   .featured-panel{
     background:var(--ink);
     color:var(--white);
@@ -705,8 +764,8 @@
     <a href="#home" class="brand">
       <svg class="logo-mark" viewBox="0 0 300 100"><use href="#vce-logo"/></svg>
       <span class="brand-text">
-        <strong>Vikas Constructions &amp; Engineer's</strong>
-        <span>Since 2024</span>
+        <strong>Vikas Constructions &amp; Engineers</strong>
+        <span>Engineers Since 2024</span>
       </span>
     </a>
     <nav class="main-nav" id="mainNav">
@@ -728,19 +787,19 @@
   <div class="hero-inner">
     <div class="hero-grid">
       <div class="reveal in">
-        <span class="eyebrow">Yamunanagar, Haryana</span>
+        <span class="eyebrow">Sheet 00 / Cover — Yamunanagar, Haryana</span>
         <h1>Building foundations for a <em>stronger</em> future.</h1>
-        <p class="lede">Vikas Constructions &amp; Engineer's is a civil engineering and infrastructure contractor delivering roads, drainage and public works with precision, since 2024.</p>
+        <p class="lede">Vikas Constructions &amp; Engineers is a civil engineering and infrastructure contractor delivering roads, drainage and public works with precision, since 2024.</p>
         <div class="hero-cta">
           <a href="#projects" class="btn btn-solid">View Our Projects</a>
           <a href="#contact" class="btn">Contact Us</a>
         </div>
       </div>
       <div class="hero-side">
-        <span class="featured-tag">Featured Project</span>
-        <strong>RCC Drain — Municipal Corporation</strong>
-        <p>A major public infrastructure works, currently underway.</p>
-        <p class="value">₹2,20,00,000 contract value</p>
+        <span class="featured-tag">Latest Award — Associate Contractor</span>
+        <strong>Baba Banda Singh Bahadur Memorial, Lohgarh</strong>
+        <p>Awarded Feb 2026, with M/s Bansal &amp; Brothers.</p>
+        <p class="value">₹29.71 Cr agreement value</p>
       </div>
     </div>
   </div>
@@ -848,10 +907,8 @@
     </div>
     <div class="about-grid">
       <div class="about-copy reveal">
-        <p>Our expertise spans various construction sectors, ensuring precision and reliability from concept to completion. We pride ourselves on a transparent approach, client-centric focus, and a relentless pursuit of perection in every structure we build.</p>
-        <p>Our team is further strengthened by the invaluable guidance of Mr. Jasmer Singh, a retired Sub-Divisional Officer (SDO) from the PWD B&R Department. Bringing over 35 years of hands-on civil engineering experience, he has successfully supervised and executed government infrastructure projects with a cumulative value of approximately ₹500 crore throughout his distinguished career. His extensive expertise in road construction, public infrastructure, quality assurance, contract administration, and compliance with government standards enables us to deliver projects that meet the highest benchmarks of quality, safety, and durability.</p>
-        <p>By combining modern construction practices with decades of proven engineering expertise, Vikas Constructions & Engineers is committed to delivering reliable, cost-effective, and long-lasting infrastructure solutions that exceed client expectations.</p>
-      
+        <p>Established in 2024, Vikas Constructions &amp; Engineers is a dynamic and forward-thinking construction company dedicated to delivering excellence in every project. With a strong foundation in engineering principles, we are committed to building high-quality, sustainable, and innovative solutions for our clients.</p>
+        <p>Our expertise spans various construction sectors, ensuring precision and reliability from concept to completion. We pride ourselves on a transparent approach, client-centric focus, and a relentless pursuit of perfection in every structure we build.</p>
         <div class="addr">
           <strong>Registered Office</strong><br>
           Shop No. 75, Geeta Colony, Kansapur Road, Yamunanagar 135003
@@ -970,6 +1027,34 @@
       <p>Showcasing our commitment to quality and precision across public and infrastructure works.</p>
     </div>
 
+    <div class="major-grid reveal">
+      <div class="major-card">
+        <div>
+          <span class="assoc-tag">Associate Contractor — with M/s Bansal &amp; Brothers</span>
+          <h4>Baba Banda Singh Bahadur Memorial, Lohgarh</h4>
+          <p class="meta">Yamuna Nagar District · Baba Banda Singh Bahadur Lohragh Foundation (Trust) · 750-day construction period · Awarded Feb 2026</p>
+        </div>
+        <span class="value mono">₹29.71 Cr</span>
+      </div>
+      <div class="major-card">
+        <div>
+          <span class="assoc-tag">Associate Contractor — with MM Envro Engineers</span>
+          <h4>Shed at Kail Kachra Plant</h4>
+          <p class="meta">Yamunanagar · Municipal Corporation Yamunanagar · 230-day construction period · Awarded Aug 2024</p>
+        </div>
+        <span class="value mono">₹7.60 Cr</span>
+      </div>
+      <div class="major-card">
+        <div>
+          <span class="assoc-tag">Associate Contractor — with MM Envro Engineers</span>
+          <h4>Sports Stadium, Village Lalhari Kalan</h4>
+          <p class="meta">Yamuna Nagar District · PWD B&amp;R Naraingarh · 730-day construction period · Awarded Jan 2026</p>
+        </div>
+        <span class="value mono">₹6.47 Cr</span>
+      </div>
+    </div>
+    <p class="major-note reveal">Delivered in partnership with the lead contractors of record on each awarding authority's tender.</p>
+
     <div class="featured-panel reveal">
       <span class="tag">Featured — In Progress</span>
       <h3>RCC Drain for Municipal Corporation</h3>
@@ -1022,12 +1107,12 @@
       <div class="test-card">
         <span class="quote-mark">&ldquo;</span>
         <p class="quote">Vikas Constructions &amp; Engineers delivered our project on time and within budget. Their engineering expertise is truly commendable.</p>
-        <span class="who">EXN PWD B&R</span>
+        <span class="who">Satisfied Client A</span>
       </div>
       <div class="test-card">
         <span class="quote-mark">&ldquo;</span>
         <p class="quote">The team showed exceptional professionalism and attention to detail throughout. Highly recommended.</p>
-        <span class="who">EXN MC YNR</span>
+        <span class="who">Satisfied Client B</span>
       </div>
     </div>
     <p class="test-note">More testimonials coming soon.</p>
@@ -1076,7 +1161,7 @@
       <div class="brand">
         <svg class="logo-mark on-dark" viewBox="0 0 300 100" style="height:40px;"><use href="#vce-logo"/></svg>
         <span class="brand-text">
-          <strong>Vikas Constructions &amp; Engineer's</strong>
+          <strong>Vikas Constructions &amp; Engineers</strong>
           <span>Engineers Since 2024</span>
         </span>
       </div>
@@ -1088,7 +1173,7 @@
       </nav>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Vikas Constructions &amp; Engineer's. All rights reserved.</span>
+      <span>© 2026 Vikas Constructions &amp; Engineers. All rights reserved.</span>
       <span><a href="#">Privacy Policy</a><a href="#">Terms of Use</a><a href="#">Disclaimer</a></span>
     </div>
   </div>
