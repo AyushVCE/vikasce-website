@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vikas Constructions & Engineers — Building Foundations for a Stronger Future</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -284,6 +285,161 @@
     font-family:'IBM Plex Mono',monospace; font-size:10.5px; letter-spacing:.1em;
     text-transform:uppercase; color:var(--ink-soft); z-index:2;
   }
+
+  /* Manufacturing */
+  .mfg-lead{
+    font-family:'Archivo',sans-serif;
+    font-weight:800;
+    font-size:clamp(20px,2.4vw,26px);
+    color:var(--steel);
+    margin:0 0 32px;
+  }
+  .prod-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:1px;
+    background:var(--line-soft);
+    border:1px solid var(--line-soft);
+    margin-bottom:40px;
+  }
+  .prod-card{background:var(--panel); padding:32px;}
+  .prod-art{
+    background:var(--white);
+    border:1px solid var(--line-soft);
+    margin-bottom:24px;
+    padding:12px;
+  }
+  .prod-art svg{width:100%; max-width:260px; height:auto; display:block; margin:0 auto;}
+  .prod-card .tag{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--amber-dark);
+  }
+  .prod-card h3{font-size:22px; margin:6px 0 14px;}
+  .prod-size{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    border-top:1px solid var(--line-soft);
+    border-bottom:1px solid var(--line-soft);
+    padding:12px 0;
+    margin-bottom:16px;
+    gap:12px;
+    flex-wrap:wrap;
+  }
+  .prod-size span:first-child{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    color:var(--ink-soft);
+  }
+  .prod-size span:last-child{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:15px;
+    font-weight:600;
+    color:var(--ink);
+  }
+  .prod-card ul li{
+    font-size:14px;
+    color:var(--ink-soft);
+    padding:5px 0 5px 18px;
+    position:relative;
+  }
+  .prod-card ul li::before{
+    content:"";
+    position:absolute; left:0; top:13px;
+    width:8px; height:2px; background:var(--amber);
+  }
+  .mfg-feats{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:1px;
+    background:var(--line-soft);
+    border:1px solid var(--line-soft);
+    margin-bottom:40px;
+  }
+  .mfg-feat{background:var(--panel); padding:24px 26px;}
+  .mfg-feat .n{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    color:var(--amber-dark);
+    display:block;
+    margin-bottom:6px;
+  }
+  .mfg-feat h4{
+    font-family:'Archivo',sans-serif;
+    font-size:16px;
+    margin:0 0 4px;
+    color:var(--ink);
+  }
+  .mfg-feat p{font-size:13.5px; color:var(--ink-soft); margin:0;}
+  .mfg-cta{
+    background:var(--ink);
+    color:var(--white);
+    padding:32px 36px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:24px;
+    flex-wrap:wrap;
+    border-left:4px solid var(--amber);
+  }
+  .mfg-cta h3{color:var(--white); font-size:20px; margin:0 0 6px;}
+  .mfg-cta p{margin:0; font-size:14px; color:rgba(251,250,247,.75);}
+  .mfg-cta p a{color:var(--amber); font-family:'IBM Plex Mono',monospace;}
+  .mfg-strip{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11.5px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    text-align:center;
+    margin-top:22px;
+  }
+
+  /* Locations / map */
+  .map-wrap{margin-top:56px;}
+  .map-wrap > h3{font-size:20px; margin-bottom:18px;}
+  .map-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+  }
+  .map-actions{display:flex; gap:10px; flex-wrap:wrap;}
+  .map-card{
+    background:var(--panel);
+    border:1px solid var(--line-soft);
+  }
+  .map-card iframe{
+    width:100%;
+    height:340px;
+    border:0;
+    display:block;
+    background:var(--concrete-dark);
+  }
+  .map-meta{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:16px;
+    flex-wrap:wrap;
+    padding:18px 22px;
+    border-top:1px solid var(--line-soft);
+  }
+  .map-meta .tag{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--amber-dark);
+    display:block;
+    margin-bottom:4px;
+  }
+  .map-meta strong{font-family:'Archivo',sans-serif; font-size:16px; display:block;}
+  .map-meta p{margin:2px 0 0; font-size:13.5px; color:var(--ink-soft);}
 
   /* Fleet / equipment section */
   .fleet-grid{
@@ -700,6 +856,9 @@
     .about-grid{grid-template-columns:1fr; gap:36px;}
     .svc-grid{grid-template-columns:1fr 1fr;}
     .fleet-grid{grid-template-columns:repeat(3,1fr);}
+    .prod-grid{grid-template-columns:1fr;}
+    .map-grid{grid-template-columns:1fr;}
+    .mfg-feats{grid-template-columns:1fr 1fr;}
     .test-grid{grid-template-columns:1fr;}
     .contact-grid{grid-template-columns:1fr;}
     .dim-inner{grid-template-columns:1fr; }
@@ -718,6 +877,8 @@
     .nav-toggle{display:flex;}
     .svc-grid{grid-template-columns:1fr;}
     .fleet-grid{grid-template-columns:repeat(2,1fr);}
+    .mfg-feats{grid-template-columns:1fr;}
+    .prod-card{padding:24px 20px;}
     .section-head{flex-direction:column; align-items:flex-start;}
   }
 </style>
@@ -772,6 +933,7 @@
       <a href="#home">Home</a>
       <a href="#about">About Us</a>
       <a href="#services">Services</a>
+      <a href="#manufacturing">Manufacturing</a>
       <a href="#fleet">Fleet</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
@@ -787,9 +949,9 @@
   <div class="hero-inner">
     <div class="hero-grid">
       <div class="reveal in">
-        <span class="eyebrow"> Yamunanagar, Haryana</span>
+        <span class="eyebrow">— Yamunanagar, Haryana</span>
         <h1>Building foundations for a <em>stronger</em> future.</h1>
-        <p class="lede">Vikas Constructions &amp; Engineers is a civil engineering and infrastructure contractor delivering roads, drainage and public works with precision, since 2024.</p>
+        <p class="lede">Vikas Constructions &amp; Engineers is a civil engineering and infrastructure contractor delivering roads, drainage and public works with precision, and a manufacturer of fly ash bricks and concrete blocks.</p>
         <div class="hero-cta">
           <a href="#projects" class="btn btn-solid">View Our Projects</a>
           <a href="#contact" class="btn">Contact Us</a>
@@ -907,8 +1069,8 @@
     </div>
     <div class="about-grid">
       <div class="about-copy reveal">
-        <p>Established in 2024, Vikas Constructions &amp; Engineers is a dynamic and forward-thinking construction company dedicated to delivering excellence in every project. With a strong foundation in engineering principles, we are committed to building high-quality, sustainable, and innovative solutions for our clients.</p>
-        <p>Our expertise spans various construction sectors, ensuring precision and reliability from concept to completion. With the valuable guidance of Mr. Jasmer Singh, Retired SDO, PWD B&R, who brings 33 years of extensive field experience, we combine practical knowledge, technical expertise, and industry insight to deliver high-quality construction solutions.</p>
+        <p>Exceptional construction starts with proven leadership. Guided by the 33-year public works legacy of Mr. Jasmer Singh, Retired SDO (PWD B&R), we deliver robust, high-precision construction solutions across diverse sectors. By bridging technical rigor with hands-on field experience, we ensure your vision is executed flawlessly—on schedule and built to endure.</p>
+        <p>Our expertise spans various construction sectors, ensuring precision and reliability from concept to completion. We pride ourselves on a transparent approach, client-centric focus, and a relentless pursuit of perfection in every structure we build. Alongside our contracting work, we run our own manufacturing plant producing fly ash bricks and concrete blocks.</p>
         <div class="addr">
           <strong>Registered Office</strong><br>
           Shop No. 75, Geeta Colony, Kansapur Road, Yamunanagar 135003
@@ -981,7 +1143,77 @@
   </div>
 </section>
 
-<div class="index-strip"><span>03</span><span class="rule"></span><span>FLEET &amp; CAPABILITY</span></div>
+<div class="index-strip"><span>03</span><span class="rule"></span><span>MANUFACTURING</span></div>
+
+<section id="manufacturing">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Fly Ash Bricks &amp; Concrete Blocks</h2>
+      <p>High-quality, eco-friendly building materials for modern construction, made at our own manufacturing plant.</p>
+    </div>
+    <p class="mfg-lead reveal">Strong foundation. Sustainable future.</p>
+
+    <div class="prod-grid reveal">
+      <div class="prod-card">
+        <div class="prod-art">
+          <svg viewBox="0 0 200 140" aria-label="Fly ash brick illustration">
+            <polygon points="120,120 31,68.5 31,34.5 120,86" fill="#B3AD9F" stroke="#1B2B38" stroke-width="1.4" stroke-linejoin="round"/>
+            <polygon points="120,120 163,95 163,61 120,86" fill="#9A9486" stroke="#1B2B38" stroke-width="1.4" stroke-linejoin="round"/>
+            <polygon points="120,86 31,34.5 74,9.5 163,61" fill="#CFCABD" stroke="#1B2B38" stroke-width="1.4" stroke-linejoin="round"/>
+            <polygon points="113,74.5 51,38.5 81,21 143,57" fill="none" stroke="#1B2B38" stroke-width="1" opacity=".55"/>
+            <text transform="matrix(0.866,0.5,-0.866,0.5,97,47.75)" text-anchor="middle" dy=".35em" font-family="Archivo" font-weight="900" font-size="15" fill="#1B2B38" opacity=".7">VCE</text>
+          </svg>
+        </div>
+        <span class="tag">Product 01</span>
+        <h3>Fly Ash Bricks</h3>
+        <div class="prod-size"><span>Brick size</span><span>230 &times; 110 &times; 76 mm</span></div>
+        <ul>
+          <li>Eco-friendly: utilizes industrial waste and reduces environmental impact</li>
+          <li>Strong packaging and uniform size, so no breakage during transport</li>
+          <li>Lightweight, which reduces dead load and eases transportation</li>
+        </ul>
+      </div>
+      <div class="prod-card">
+        <div class="prod-art">
+          <svg viewBox="0 0 200 140" aria-label="Concrete block illustration">
+            <polygon points="120,128 32,77 32,39 120,90" fill="#B3AD9F" stroke="#1B2B38" stroke-width="1.4" stroke-linejoin="round"/>
+            <polygon points="120,128 175,96 175,58 120,90" fill="#9A9486" stroke="#1B2B38" stroke-width="1.4" stroke-linejoin="round"/>
+            <polygon points="120,90 32,39 87,7 175,58" fill="#CFCABD" stroke="#1B2B38" stroke-width="1.4" stroke-linejoin="round"/>
+            <line x1="76" y1="64.5" x2="131" y2="32.5" stroke="#1B2B38" stroke-width="1" opacity=".35"/>
+          </svg>
+        </div>
+        <span class="tag">Product 02</span>
+        <h3>Concrete Blocks</h3>
+        <div class="prod-size"><span>Block size</span><span>1 ft &times; 1.6 ft &times; 0.6 ft</span></div>
+        <ul>
+          <li>High compressive strength, durable and long-lasting</li>
+          <li>Fire resistant, for greater safety in every structure</li>
+          <li>Cost-effective, with best value for your construction needs</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mfg-feats reveal">
+      <div class="mfg-feat"><span class="n mono">01</span><h4>Eco-friendly</h4><p>Utilizes industrial waste and reduces environmental impact.</p></div>
+      <div class="mfg-feat"><span class="n mono">02</span><h4>High strength</h4><p>Durable and long-lasting for all types of structures.</p></div>
+      <div class="mfg-feat"><span class="n mono">03</span><h4>Fire insulation</h4><p>Keeps your building cooler in summer and warmer in winter.</p></div>
+      <div class="mfg-feat"><span class="n mono">04</span><h4>Lower water penetration</h4><p>Better resistance to moisture and weathering.</p></div>
+      <div class="mfg-feat"><span class="n mono">05</span><h4>Light weight</h4><p>Reduces dead load and makes transportation easier.</p></div>
+      <div class="mfg-feat"><span class="n mono">06</span><h4>No breakage in transport</h4><p>Strong packaging and uniform size.</p></div>
+    </div>
+
+    <div class="mfg-cta reveal">
+      <div>
+        <h3>Need bricks or blocks for your project?</h3>
+        <p>Call <a href="tel:+919355525626">93555 25626</a> or <a href="tel:+918295540373">82955 40373</a> for rates and availability. <a href="#locations">View plant location</a>.</p>
+      </div>
+      <a href="#contact" class="btn btn-solid">Request a Quote</a>
+    </div>
+    <p class="mfg-strip">Sustainable &nbsp;|&nbsp; Durable &nbsp;|&nbsp; Cost-effective &nbsp;|&nbsp; Trusted by builders</p>
+  </div>
+</section>
+
+<div class="index-strip"><span>04</span><span class="rule"></span><span>FLEET &amp; CAPABILITY</span></div>
 
 <section id="fleet">
   <div class="wrap">
@@ -1018,7 +1250,7 @@
   </div>
 </section>
 
-<div class="index-strip"><span>04</span><span class="rule"></span><span>PROJECTS</span></div>
+<div class="index-strip"><span>05</span><span class="rule"></span><span>PROJECTS</span></div>
 
 <section id="projects">
   <div class="wrap">
@@ -1095,7 +1327,7 @@
   </div>
 </section>
 
-<div class="index-strip"><span>05</span><span class="rule"></span><span>TESTIMONIALS</span></div>
+<div class="index-strip"><span>06</span><span class="rule"></span><span>TESTIMONIALS</span></div>
 
 <section id="testimonials">
   <div class="wrap">
@@ -1107,7 +1339,7 @@
       <div class="test-card">
         <span class="quote-mark">&ldquo;</span>
         <p class="quote">Vikas Constructions &amp; Engineers delivered our project on time and within budget. Their engineering expertise is truly commendable.</p>
-        <span class="who">EXN PWD B&R</span>
+        <span class="who">EXN PWD B&R YNR</span>
       </div>
       <div class="test-card">
         <span class="quote-mark">&ldquo;</span>
@@ -1119,7 +1351,7 @@
   </div>
 </section>
 
-<div class="index-strip"><span>06</span><span class="rule"></span><span>CONTACT</span></div>
+<div class="index-strip"><span>07</span><span class="rule"></span><span>CONTACT</span></div>
 
 <section id="contact">
   <div class="wrap">
@@ -1143,12 +1375,45 @@
         </div>
         <div class="row">
           <span class="label">Email</span>
-          <a href="mailto:Admin@vikasce.com">Admin@vikasce.com</a>
+          <a href="mailto:ayush@vikasce.com">ayush@vikasce.com</a>
         </div>
         <div class="row">
           <span class="label">Phone</span>
           <a href="tel:+918295540373">+91 82955 40373</a><br>
           <a href="tel:+919355525626">+91 93555 25626</a>
+        </div>
+      </div>
+    </div>
+    <div class="map-wrap reveal" id="locations">
+      <h3>Find Us</h3>
+      <div class="map-grid">
+        <div class="map-card">
+          <iframe title="Vikas Constructions &amp; Engineers head office on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=30.1424815,77.2709652&amp;z=17&amp;output=embed"></iframe>
+          <div class="map-meta">
+            <div>
+              <span class="tag">Head Office</span>
+              <strong>Vikas Constructions &amp; Engineers</strong>
+              <p>Shop No. 75, Geeta Colony, Kansapur Road, Yamunanagar 135003</p>
+            </div>
+            <div class="map-actions">
+              <a class="btn" href="https://maps.app.goo.gl/hMTW9C7FwpxqATSQ7" target="_blank" rel="noopener">Open in Google Maps</a>
+              <a class="btn btn-solid" href="https://www.google.com/maps/dir/?api=1&amp;destination=30.1424815,77.2709652" target="_blank" rel="noopener">Get Directions</a>
+            </div>
+          </div>
+        </div>
+        <div class="map-card">
+          <iframe title="Vikas Constructions &amp; Engineers fly ash bricks and concrete blocks plant on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=30.2444382,77.4849942&amp;z=17&amp;output=embed"></iframe>
+          <div class="map-meta">
+            <div>
+              <span class="tag">Manufacturing Plant</span>
+              <strong>Fly Ash Bricks &amp; Concrete Blocks Plant</strong>
+              <p>Vikas Constructions &amp; Engineers manufacturing unit</p>
+            </div>
+            <div class="map-actions">
+              <a class="btn" href="https://maps.app.goo.gl/kUYKRwwEPyFBYHPX6" target="_blank" rel="noopener">Open in Google Maps</a>
+              <a class="btn btn-solid" href="https://www.google.com/maps/dir/?api=1&amp;destination=30.2444382,77.4849942" target="_blank" rel="noopener">Get Directions</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -1168,6 +1433,7 @@
       <nav>
         <a href="#about">About Us</a>
         <a href="#services">Services</a>
+        <a href="#manufacturing">Manufacturing</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
